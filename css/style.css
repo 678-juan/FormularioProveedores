@@ -161,3 +161,102 @@ input[type="tel"] {
 	background-color: #9bbcf3;
 	cursor: not-allowed;
 }
+
+.card-proveedor {
+	max-width: 980px;
+}
+
+.proveedor-form {
+	margin-top: 8px;
+}
+
+.form-grid {
+	display: grid;
+	gap: 12px;
+	margin-bottom: 12px;
+}
+
+.top-row {
+	grid-template-columns: 1fr 1fr;
+	align-items: end;
+}
+
+.two-columns {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.field {
+	text-align: left;
+}
+
+.field label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 6px;
+	color: #334155;
+}
+
+.field input,
+.field select {
+	width: 100%;
+	padding: 8px 10px;
+	border: 1px solid #e6eaf0;
+	border-radius: 6px;
+	background: #fff;
+	box-sizing: border-box;
+	font-size: 13px;
+	color: #0f172a;
+}
+
+.full-width {
+	grid-column: 1 / -1;
+}
+
+.field-dv input {
+	max-width: 90px;
+}
+
+.checks-inline {
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.checks-group {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px 18px;
+	padding: 8px 0 4px;
+}
+
+.checkbox-inline {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-weight: 500;
+	color: #1f2937;
+}
+
+.section-title {
+	margin: 14px 0 10px;
+	padding: 10px 12px;
+	background: #eef2f7;
+	border: 1px solid #dbe3ee;
+	border-radius: 6px;
+	text-align: left;
+	font-size: 15px;
+	color: #1f2937;
+}
+
+@media (max-width: 720px) {
+	.top-row,
+	.two-columns {
+		grid-template-columns: 1fr;
+	}
+
+	.checks-inline {
+		justify-content: flex-start;
+	}
+}
