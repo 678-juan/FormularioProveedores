@@ -33,6 +33,90 @@ th {
 	border-radius: 6px;
 }
 
+/* Reglas para contactos.html */
+h2 {
+    text-align: center;
+}
+
+table input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px;
+}
+
+/* Diseño tipo tarjeta para formulario de contactos */
+.card {
+	max-width: 420px;
+	background: #fff;
+	border-radius: 6px;
+	box-shadow: 0 6px 18px rgba(20,30,40,0.12);
+	padding: 20px 22px;
+	margin: 20px auto;
+	font-size: 14px;
+	color: #223;
+}
+
+.card h2 {
+	margin: 0 0 14px 0;
+	font-size: 16px;
+	color: #fff;
+	background: #2d3748;
+	padding: 12px 14px;
+	border-radius: 4px;
+}
+
+.form-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.form-table td {
+	padding: 8px 6px;
+	vertical-align: middle;
+}
+
+.form-table label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 6px;
+	color: #334155;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+	width: 100%;
+	padding: 8px 10px;
+	border: 1px solid #e6eaf0;
+	border-radius: 6px;
+	background: #fff;
+	box-sizing: border-box;
+	font-size: 13px;
+	color: #0f172a;
+}
+
+.row-two > td {
+	width: 50%;
+}
+
+.btn-submit {
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+	background: #ff8a3d;
+	color: #fff;
+	padding: 10px 14px;
+	border-radius: 6px;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	margin: 14px auto 0;
+}
+
+.actions {
+	text-align: center;
+}
+
 .pagina-terminos {
 	display: flex;
 	justify-content: center;
