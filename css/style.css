@@ -33,7 +33,33 @@ th {
 	border-radius: 6px;
 }
 
-/* Reglas para contactos.html */
+.pagina-index {
+	display: flex;
+	justify-content: center;
+}
+
+.card-index {
+	max-width: 1100px;
+	text-align: center;
+}
+
+.card-index h2 {
+	background: #2d3748;
+	color: #fff;
+}
+
+.card-index .form-table th,
+.card-index .form-table td {
+	text-align: center;
+}
+
+.tabla-proveedores th,
+.tabla-proveedores td {
+	padding: 12px 10px;
+	font-size: 14px;
+}
+
+
 h2 {
     text-align: center;
 }
