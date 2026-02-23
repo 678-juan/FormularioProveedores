@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Información Tributaria</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="card">
+	<h2>3. Información Tributaria</h2>
+
+	<form class="contact-form" action="#" method="post">
+		<table class="form-table">
+			<tr>
+				<td>
+					<label>Gran Contribuyente</label>
+					<div class="options">
+						<label><input type="radio" name="gran_contrib" value="si"> Sí</label>
+						<label><input type="radio" name="gran_contrib" value="no"> No</label>
+					</div>
+				</td>
+				<td>
+					<label>Autorretenedor</label>
+					<div class="options">
+						<label><input type="radio" name="autorretenedor" value="si"> Sí</label>
+						<label><input type="radio" name="autorretenedor" value="no"> No</label>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label>Responsable de IVA</label>
+					<div class="options">
+						<label><input type="radio" name="iva_responsable" value="si"> Sí</label>
+						<label><input type="radio" name="iva_responsable" value="no"> No</label>
+					</div>
+				</td>
+				<td>
+					<label>Declarante de Renta</label>
+					<div class="options">
+						<label><input type="radio" name="renta" value="si"> Sí</label>
+						<label><input type="radio" name="renta" value="no"> No</label>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="actividad_principal">Actividad Principal</label>
+					<select id="actividad_principal" name="actividad_principal">
+						<option value="comercio">Comercio</option>
+						<option value="servicios">Servicios</option>
+						<option value="industrial">Industrial</option>
+						<option value="transporte">Transporte</option>
+						<option value="otro">Otro</option>
+					</select>
+				</td>
+				<td>
+					<label for="otras">Otras</label>
+					<input id="otras" name="otras" type="text">
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2" class="actions">
+					<button type="submit" class="btn-submit">Guardar</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+
+</body>
+</html>

@@ -95,6 +95,26 @@ input[type="tel"] {
 	color: #0f172a;
 }
 
+/* Opciones Sí / No alineadas */
+.form-table .options {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+.form-table .options label {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-weight: 500;
+	color: #0f172a;
+}
+.form-table .options input[type="radio"],
+.form-table .options input[type="checkbox"] {
+	margin: 0;
+	width: 16px;
+	height: 16px;
+}
+
 .row-two > td {
 	width: 50%;
 }
