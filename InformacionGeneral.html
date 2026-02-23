@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Información General del Proveedor</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="card card-proveedor">
+		<h2>1. Información General del Proveedor</h2>
+
+		<form action="#" method="post" class="proveedor-form">
+			<div class="form-grid top-row">
+				<div class="field">
+					<label for="fecha">Fecha</label>
+					<input type="date" id="fecha" name="fecha">
+				</div>
+				<div class="field checks-inline">
+					<label class="checkbox-inline"><input type="checkbox" name="tipo_tramite" value="inscripcion"> Inscripción</label>
+					<label class="checkbox-inline"><input type="checkbox" name="tipo_tramite" value="actualizacion"> Actualización de datos</label>
+				</div>
+			</div>
+
+			<div class="form-grid two-columns">
+				<div class="field full-width">
+					<label for="razon_social">Razón social / Nombre</label>
+					<input type="text" id="razon_social" name="razon_social" placeholder="Ingrese razón social o nombre">
+				</div>
+
+				<div class="field">
+					<label for="nit_cc">NIT / CC</label>
+					<input type="text" id="nit_cc" name="nit_cc" placeholder="Ingrese NIT o cédula">
+				</div>
+				<div class="field field-dv">
+					<label for="dv">DV</label>
+					<input type="text" id="dv" name="dv" maxlength="2" placeholder="DV">
+				</div>
+
+				<div class="field">
+					<label for="naturaleza_juridica">Naturaleza jurídica</label>
+					<select id="naturaleza_juridica" name="naturaleza_juridica">
+						<option value="">Seleccione una opción</option>
+						<option value="persona_natural">Persona Natural</option>
+						<option value="persona_juridica">Persona Jurídica</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="field">
+				<label>Tipo de sociedad (si aplica)</label>
+				<div class="checks-group">
+					<label class="checkbox-inline"><input type="checkbox" name="tipo_sociedad" value="sociedad_anonima"> Sociedad Anónima</label>
+					<label class="checkbox-inline"><input type="checkbox" name="tipo_sociedad" value="sociedad_limitada"> Sociedad Limitada</label>
+					<label class="checkbox-inline"><input type="checkbox" name="tipo_sociedad" value="empresa_estatal"> Empresa Estatal</label>
+					<label class="checkbox-inline"><input type="checkbox" name="tipo_sociedad" value="empresa_unipersonal"> Empresa Unipersonal</label>
+					<label class="checkbox-inline"><input type="checkbox" name="tipo_sociedad" value="sas"> Sociedad por Acciones Simplificada (SAS)</label>
+					<label class="checkbox-inline"><input type="checkbox" name="tipo_sociedad" value="sucursal_colombia"> Sucursal Colombia Empresa Extranjera</label>
+					<label class="checkbox-inline"><input type="checkbox" name="tipo_sociedad" value="empresa_extranjera"> Empresa Extranjera</label>
+					<label class="checkbox-inline"><input type="checkbox" name="tipo_sociedad" value="otra"> Otra</label>
+				</div>
+			</div>
+
+			<h3 class="section-title">Sede Principal</h3>
+
+			<div class="form-grid two-columns">
+				<div class="field full-width">
+					<label for="direccion">Dirección</label>
+					<input type="text" id="direccion" name="direccion">
+				</div>
+
+				<div class="field">
+					<label for="ciudad">Ciudad</label>
+					<select id="ciudad" name="ciudad">
+						<option value="">Seleccione ciudad</option>
+						<option>Bogotá</option>
+						<option>Medellín</option>
+						<option>Cali</option>
+						<option>Barranquilla</option>
+						<option>Cartagena</option>
+					</select>
+				</div>
+				<div class="field">
+					<label for="departamento">Departamento</label>
+					<select id="departamento" name="departamento">
+						<option value="">Seleccione departamento</option>
+						<option>Antioquia</option>
+						<option>Atlántico</option>
+						<option>Bolívar</option>
+						<option>Cundinamarca</option>
+						<option>Valle del Cauca</option>
+					</select>
+				</div>
+
+				<div class="field">
+					<label for="pais">País</label>
+					<select id="pais" name="pais">
+						<option value="">Seleccione país</option>
+						<option>Colombia</option>
+						<option>Ecuador</option>
+						<option>Perú</option>
+						<option>México</option>
+					</select>
+				</div>
+
+				<div class="field">
+					<label for="telefono_principal">Teléfono (principal)</label>
+					<input type="tel" id="telefono_principal" name="telefono_principal">
+				</div>
+				<div class="field">
+					<label for="ext">Extensión</label>
+					<input type="text" id="ext" name="ext">
+				</div>
+				<div class="field">
+					<label for="celular">Celular</label>
+					<input type="tel" id="celular" name="celular">
+				</div>
+
+				<div class="field">
+					<label for="fax">Fax</label>
+					<input type="text" id="fax" name="fax">
+				</div>
+				<div class="field">
+					<label for="pagina_web">Página web</label>
+					<input type="text" id="pagina_web" name="pagina_web" placeholder="https://...">
+				</div>
+				<div class="field">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email">
+				</div>
+				<div class="field">
+					<label for="otro">Otro</label>
+					<input type="text" id="otro" name="otro">
+				</div>
+			</div>
+
+			<div class="actions">
+				<button type="submit" class="btn-submit">Siguiente</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
